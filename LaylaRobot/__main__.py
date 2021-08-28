@@ -105,16 +105,17 @@ buttons = [
 
 
 HELP_STRINGS = """
-Heya, glad to hear you want to donate!
+`Hi, I'M Ken Kaneki.
 
-But My Owner Is Very Rich No Need To Donate me😉😉."""
+Click On The Below Button To Find Your Specific Command.`
 
-layla_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
+Powered by :- [Anime Chamber Club](https://t.me/thechamberofanimefans)"""
+
+layla_IMG = "https://telegra.ph/file/a6310c7bb697983e0b8b8.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Hero](t.me/HEROGAMERS1) \
- Supporting isnt always financial! [AwesomeSupport](t.me/LaylaList) \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+
+But My Owner Is Very Rich No Need To Donate me😉😉."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -359,19 +360,21 @@ def layla_about_callback(update, context):
     query = update.callback_query
     if query.data == "layla_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *Layla*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Ken Kaneki*, A Powerful Anime Themed Group Management Bot Built To Help You Manage Your Group Easily.
+
                  \n❍ I can restrict users.
+
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
+
                  \n❍ I have an advanced anti-flood system.
+
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \n❍ Awesome Bots @LaylaList
-                 \n❍ Support Group @AwesomeSupport
-                 \n❍ Assistant @LaylaAssistant.
-                 \nHere is the [💾Repository](https://github.com/QueenArzoo/LaylaRobot).
-                 \n\nIf you have any question about Layla, let us know at .""",
+
+                 \n❍ I check for admins' permissions before executing any command and more stuffs.
+
+                 \n\n If you have any question about Ken Kaneki, Ask to my [Owner](https://t.me/Natsu_Dragneel_FT).""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -398,7 +401,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🤗 I'm *Layla*
-                 \nHere is the [Source Code](https://github.com/QueenArzoo/LaylaRobot) .""",
+                 \nSorry, but the source is secret.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -693,7 +696,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yes I'm alive 😹")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yeah say what.... Wanna count from 1000-7?)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
