@@ -81,7 +81,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('Thoda Saber Karo!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./LaylaRobot/resources/blackbg.jpg')
