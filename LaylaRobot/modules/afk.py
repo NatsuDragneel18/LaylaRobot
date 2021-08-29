@@ -59,7 +59,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         try:
             options = [
                 "You Back, Now tell Me 1000-7?",
-                "{} is back!",
+                "Life goes on, with or without you.",
                 "{} is now in the chat!",
                 "{} is awake!",
                 "{} is back online!",
