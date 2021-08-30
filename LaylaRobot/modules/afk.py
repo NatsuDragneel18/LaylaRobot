@@ -38,7 +38,7 @@ def afk(update: Update, context: CallbackContext):
     sql.set_afk(update.effective_user.id, reason)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_text("You going? Yeah ok doesn't matters to me.".format(fname, notice))
+        update.effective_message.reply_text("*You going? Yeah ok doesn't matters to me.*".format(fname, notice))
     except BadRequest:
         pass
 
@@ -58,11 +58,11 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "You Back, Now tell Me 1000-7?",
-                "Life goes on, with or without you.",
-                "Never trust this man. He was busy with his GF and gave us false reason 😒",
-                "That rich guy, who was missing, is now found...",
-                "Wait I heard the news you are back in the chat... Is it right? Then we will be having some fun here.",
+                "*You Back, Now tell Me 1000-7?*",
+                "*Life goes on, with or without you.*",
+                "*Never trust this man. He was busy with his GF and gave us false reason 😒*",
+                "*That rich guy, who was missing, is now found...*",
+                "*Wait I heard the news you are back in the chat... Is it right? Then we will be having some fun here.*",
                 "{} is finally here!",
                 "Welcome back! {}",
                 "Where is {}?\nIn the chat!",
