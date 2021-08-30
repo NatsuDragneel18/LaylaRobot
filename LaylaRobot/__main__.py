@@ -84,7 +84,7 @@ I help Anime Chamber Club by providing some fun games and anime commands for mem
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add To Your Group ➕️", url="t.me/LaylaRobot?startgroup=true"),
+            text="➕️ Add To Your Group ➕️", url="t.me/acckenkanekibot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="About", callback_data="layla_"),
@@ -402,7 +402,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Layla*
+            text=""" Hi..🤗 I'm *Ken Kaneki*
                  \nSorry, but the source is secret.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -698,7 +698,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Yeah say what.... Wanna count from 1000-7?")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "*Hey There, Now I Am Ready To Help You All.*")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
