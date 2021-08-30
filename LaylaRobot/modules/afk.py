@@ -58,7 +58,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "**",
+                "*Man Was Busy At His Business... How Are You Dude...*",
                 "*Life goes on, with or without you.*",
                 "*Never trust this man. He was busy with his GF and gave us false reason 😒*",
                 "*That rich guy, who was missing, is now found...*",
