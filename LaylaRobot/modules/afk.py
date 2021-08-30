@@ -31,7 +31,7 @@ def afk(update: Update, context: CallbackContext):
         reason = args[1]
         if len(reason) > 100:
             reason = reason[:100]
-            notice = "\nYour afk reason was shortened to 100 characters."
+            notice = "*Going already. Huh, Yeah go*"
     else:
         reason = ""
 
@@ -58,14 +58,14 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "*You Back, Now tell Me 1000-7?*",
+                "**",
                 "*Life goes on, with or without you.*",
                 "*Never trust this man. He was busy with his GF and gave us false reason 😒*",
                 "*That rich guy, who was missing, is now found...*",
                 "*Wait I heard the news you are back in the chat... Is it right? Then we will be having some fun here.*",
-                "{} is finally here!",
-                "Welcome back! {}",
-                "Where is {}?\nIn the chat!",
+                "*You bring everyone so much joy when you leave the room.*",
+                "*I don't know if god is a sport fan or not, but I do know this he loves good comeback.*",
+                "*Enemies Don't Leak Your Plan, If Don't Have One.*",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
