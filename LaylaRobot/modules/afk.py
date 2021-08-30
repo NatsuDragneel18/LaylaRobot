@@ -60,9 +60,9 @@ def no_longer_afk(update: Update, context: CallbackContext):
             options = [
                 "You Back, Now tell Me 1000-7?",
                 "Life goes on, with or without you.",
-                "{} is now in the chat!",
-                "{} is awake!",
-                "{} is back online!",
+                "Never trust this man. He was busy with his GF and gave us false reason 😒",
+                "That rich guy, who was missing, is now found...",
+                "Wait I heard the news you are back in the chat... Is it right? Then we will be having some fun here.",
                 "{} is finally here!",
                 "Welcome back! {}",
                 "Where is {}?\nIn the chat!",
