@@ -89,7 +89,7 @@ buttons = [
     [
         InlineKeyboardButton(text="About", callback_data="layla_"),
         InlineKeyboardButton(
-            text="Request Chamber", url=f"https://t.me/thechamberofanimefans"
+            text="Support", url=f"https://t.me/thechamberofanimefans"
         ),
     ],
     [
